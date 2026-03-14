@@ -1,0 +1,152 @@
+import streamlit as st
+import json
+import pandas as pd
+from datetime import datetime
+
+# Page configuration for Streamlit Cloud
+st.set_page_config(
+    page_title="Visualizador de Artigos PubMed",
+    page_icon="📚",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+# Custom CSS for better aesthetics
+st.markdown("""
+    <style>
+    .main {
+        background-color: #f8f9fa;
+    }
+    .stCard {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    .article-title {
+        color: #1e88e5;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .badge {
+        background-color: #e3f2fd;
+        color: #1976d2;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        margin-right: 5px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+def load_data(file_path):
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return data
+    except Exception as e:
+        st.error(f"Erro ao carregar o arquivo JSON: {e}")
+        return None
+
+def main():
+    st.title("📚 Dashboard de Artigos PubMed")
+    st.markdown("Visualize de forma amigável os resultados do seu scraping de TCC.")
+
+    # Load data
+    json_file = "pubmed_articles.json"
+    data = load_data(json_file)
+
+    if not data:
+        st.warning("Nenhum dado encontrado no arquivo JSON.")
+        return
+
+    # Sidebar: Summary and Filters
+    st.sidebar.header("🔍 Filtros e Resumo")
+    
+    # Summary stats
+    gen_at = data.get("generated_at", "N/A")
+    try:
+        dt_obj = datetime.fromisoformat(gen_at)
+        formatted_date = dt_obj.strftime("%d/%m/%Y %H:%M:%S")
+    except:
+        formatted_date = gen_at
+
+    st.sidebar.info(f"📅 **Data da busca:**\n{formatted_date}")
+    st.sidebar.metric("Total de Artigos", data.get("total", 0))
+
+    # Keywords display
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("🔑 Palavras-chave")
+    for kw in data.get("keywords", []):
+        st.sidebar.markdown(f"- {kw}")
+
+    # Main area
+    articles = data.get("articles", [])
+    if not articles:
+        st.info("Nenhum artigo encontrado.")
+        return
+
+    df = pd.DataFrame(articles)
+
+    # Search and Filter logic
+    search_query = st.text_input("Filtrar por título, autor ou periódico:", "")
+    
+    filtered_df = df.copy()
+    if search_query:
+        mask = (
+            df['title'].str.contains(search_query, case=False, na=False) |
+            df['authors'].str.contains(search_query, case=False, na=False) |
+            df['journal'].str.contains(search_query, case=False, na=False)
+        )
+        filtered_df = df[mask]
+
+    # Filters by Year and Journal in Sidebar
+    years = sorted(df['year'].unique(), reverse=True)
+    selected_year = st.sidebar.multiselect("Filtrar por Ano:", years, default=years)
+    
+    journals = sorted(df['journal'].unique())
+    selected_journals = st.sidebar.multiselect("Filtrar por Periódico:", journals, default=journals)
+
+    filtered_df = filtered_df[
+        (filtered_df['year'].isin(selected_year)) &
+        (filtered_df['journal'].isin(selected_journals))
+    ]
+
+    st.write(f"Exibindo **{len(filtered_df)}** de **{len(df)}** artigos.")
+
+    # Displaying Articles
+    for _, row in filtered_df.iterrows():
+        with st.container():
+            st.markdown(f"### {row['title']}")
+            
+            col1, col2, col3 = st.columns([1, 1, 1])
+            col1.markdown(f"🗓️ **Ano:** {row['year']}")
+            col2.markdown(f"📖 **Journal:** {row['journal']}")
+            col3.markdown(f"🆔 **PMID:** {row['pmid']}")
+
+            with st.expander("Ver Resumo e Detalhes"):
+                st.markdown("**Autores:**")
+                st.write(row['authors'])
+                st.markdown("**Abstract:**")
+                st.write(row['abstract'])
+                
+                if row.get('doi'):
+                    st.markdown(f"🔗 **DOI:** [{row['doi']}](https://doi.org/{row['doi']})")
+                
+                st.markdown(f"🌐 [Ver no PubMed]({row['url']})")
+            
+            st.markdown("---")
+
+    # Download Button
+    st.sidebar.markdown("---")
+    csv = filtered_df.to_csv(index=False).encode('utf-8')
+    st.sidebar.download_button(
+        label="📥 Baixar Filtros como CSV",
+        data=csv,
+        file_name='artigos_filtrados.csv',
+        mime='text/csv',
+    )
+
+if __name__ == "__main__":
+    main()
