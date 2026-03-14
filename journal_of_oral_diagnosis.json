@@ -1,0 +1,31 @@
+{
+  "source": "Journal_of_Oral_Diagnosis",
+  "generated_at": "2026-03-14T20:19:44.674846",
+  "keywords": [
+    "Ameloblastoma",
+    "Odontogenic Cysts",
+    "Artificial intelligence",
+    "Tomography",
+    "X-Ray computed"
+  ],
+  "total": 1,
+  "original_sources": [
+    "Journal of Oral Diagnosis"
+  ],
+  "articles": [
+    {
+      "id": "JOralDiag_Brazil_2025",
+      "source": "Journal of Oral Diagnosis",
+      "pmid": "N/A",
+      "title": "The use of artificial intelligence in the diagnosis of odontogenic cysts and tumors",
+      "authors": "Souza LL; Roza ALOC; Giraldo-Roldán D; Correia-Neto IJ; Lopes MA; Khurram SA; et al.",
+      "journal": "Journal of Oral Diagnosis",
+      "year": "2025",
+      "doi": "N/A",
+      "url": "https://jordi.com.br/revista/article/view/289",
+      "keywords": "artificial intelligence; odontogenic cysts; odontogenic tumors; CT; histopathology; CBCT",
+      "study_type": "Literature Review",
+      "abstract": "This literature review examines the latest advancements and challenges in using AI for diagnosing odontogenic cysts and tumors. These lesions present overlapping clinical and radiographic features complicating accurate diagnosis. AI, particularly ML and DL models, offers solutions by enhancing automation and precision. Numerous studies highlight AI algorithms analyzing radiographs, CT, and histopathological slides, achieving diagnostic outcomes comparable to expert clinicians. Key challenges remain: limited datasets, class imbalance, interpretability, and lack of external validation."
+    }
+  ]
+}

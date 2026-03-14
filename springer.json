@@ -1,0 +1,46 @@
+{
+  "source": "Springer",
+  "generated_at": "2026-03-14T20:19:44.683167",
+  "keywords": [
+    "Ameloblastoma",
+    "Odontogenic Cysts",
+    "Artificial intelligence",
+    "Tomography",
+    "X-Ray computed"
+  ],
+  "total": 2,
+  "original_sources": [
+    "Applied Intelligence (Springer)",
+    "Oral Radiology (Springer)"
+  ],
+  "articles": [
+    {
+      "id": "OralRadiology_ML_2024",
+      "source": "Oral Radiology (Springer)",
+      "pmid": "N/A",
+      "title": "Accuracy of machine learning in the diagnosis of odontogenic cysts and tumors: a systematic review and meta-analysis",
+      "authors": "Shrivastava PK; Hasan S; Abid L; et al.",
+      "journal": "Oral Radiology",
+      "year": "2024",
+      "doi": "10.1007/s11282-024-00745-7",
+      "url": "https://link.springer.com/article/10.1007/s11282-024-00745-7",
+      "keywords": "machine learning; odontogenic cysts; odontogenic tumors; OPG; CBCT; diagnosis",
+      "study_type": "Systematic Review & Meta-analysis",
+      "abstract": "Comprehensive literature search (Jan 2015–Dec 2022). Studies using ML for odontogenic cysts/tumors using OPG or CBCT included. 16 studies (10,872 cysts/tumors). Sensitivity/specificity for OPG: 0.83/0.82 (95% CI). CBCT studies: sensitivity=0.88, specificity=0.88 (95% CI 0.87–0.89). QUADAS-2 assessed risk of bias. Machine learning shows high diagnostic capability for odontogenic cysts and tumors via both imaging modalities."
+    },
+    {
+      "id": "AppInt_CBCT_Transformer_2025",
+      "source": "Applied Intelligence (Springer)",
+      "pmid": "N/A",
+      "title": "Dense image-mask attention-guided transformer network for jaw lesions classification and segmentation in dental CBCT images",
+      "authors": "Liu W; Li X; Liu C; Gao G; Xiong Y; Zhu T; et al.",
+      "journal": "Applied Intelligence",
+      "year": "2025",
+      "doi": "10.1007/s10489-025-06408-2",
+      "url": "https://dl.acm.org/doi/10.1007/s10489-025-06408-2",
+      "keywords": "CBCT; jaw lesions; transformer; segmentation; classification; ameloblastoma; deep learning",
+      "study_type": "Original Research",
+      "abstract": "Automatic segmentation and classification of jaw lesions from CBCT images are crucial for computer-assisted diagnosis in oral and maxillofacial surgery. A dense image-mask attention-guided transformer network was proposed. A large in-house dataset of 358 CBCT scans with five types of jaw lesions was constructed. A task merge module employing per-lesion inference was designed. Results: binary segmentation DICE=90%, mean classification accuracy=89.23%, multi-class segmentation DICE=79.06%, surpassing many state-of-the-art methods."
+    }
+  ]
+}

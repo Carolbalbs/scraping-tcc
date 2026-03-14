@@ -1,11 +1,12 @@
 import streamlit as st
 import json
 import pandas as pd
+import os
 from datetime import datetime
 
 # Page configuration for Streamlit Cloud
 st.set_page_config(
-    page_title="Visualizador de Artigos PubMed",
+    page_title="Visualizador de Artigos TCC",
     page_icon="📚",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -50,12 +51,25 @@ def load_data(file_path):
         return None
 
 def main():
-    st.title("📚 Dashboard de Artigos PubMed")
-    st.markdown("Visualize de forma amigável os resultados do seu scraping de TCC.")
+    st.title("📚 Dashboard de Artigos TCC")
+    st.markdown("Visualize de forma amigável os resultados do seu scraping de diversas plataformas.")
+
+    # Sidebar: File Selection
+    st.sidebar.header("📁 Seleção de Dados")
+    json_files = [f for f in os.listdir('.') if f.endswith('.json')]
+    
+    if not json_files:
+        st.error("Nenhum arquivo JSON encontrado no diretório.")
+        return
+
+    selected_file = st.sidebar.selectbox(
+        "Escolha o arquivo de dados:",
+        json_files,
+        index=json_files.index("pubmed_articles.json") if "pubmed_articles.json" in json_files else 0
+    )
 
     # Load data
-    json_file = "pubmed_articles.json"
-    data = load_data(json_file)
+    data = load_data(selected_file)
 
     if not data:
         st.warning("Nenhum dado encontrado no arquivo JSON.")

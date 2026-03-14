@@ -1,0 +1,31 @@
+{
+  "source": "arXiv",
+  "generated_at": "2026-03-14T20:19:44.684311",
+  "keywords": [
+    "Ameloblastoma",
+    "Odontogenic Cysts",
+    "Artificial intelligence",
+    "Tomography",
+    "X-Ray computed"
+  ],
+  "total": 1,
+  "original_sources": [
+    "arXiv"
+  ],
+  "articles": [
+    {
+      "id": "arXiv_2602.05515",
+      "source": "arXiv",
+      "pmid": "arXiv:2602.05515",
+      "title": "A Unified Multimodal Framework for Dataset Construction and Model-Based Diagnosis of Ameloblastoma",
+      "authors": "George AB; John AM; Anoop A; Bhasuran B",
+      "journal": "arXiv (cs.AI)",
+      "year": "2026",
+      "doi": "10.48550/arXiv.2602.05515",
+      "url": "https://arxiv.org/abs/2602.05515",
+      "keywords": "Ameloblastoma; Multimodal dataset; Surgical decision support; Clinical AI systems; NLP",
+      "study_type": "Preprint (arXiv)",
+      "abstract": "AI-enabled diagnostics in maxillofacial pathology require structured, high-quality multimodal datasets. A newly curated multimodal dataset focused on ameloblastoma integrates annotated radiological, histopathological, and intraoral clinical images with structured data from case reports. NLP was used to extract clinically relevant features; image data underwent domain-specific preprocessing and augmentation. A multimodal deep learning model was developed to classify ameloblastoma variants, assess recurrence risk, and support surgical planning. Variant classification accuracy improved from 46.2% to 65.9%; abnormal tissue detection F1-score improved from 43.0% to 90.3%. Benchmarked against MultiCaRe, this work advances patient-specific AI for maxillofacial pathology."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "source": "Oxford_Academic",
+  "generated_at": "2026-03-14T20:19:44.678992",
+  "keywords": [
+    "Ameloblastoma",
+    "Odontogenic Cysts",
+    "Artificial intelligence",
+    "Tomography",
+    "X-Ray computed"
+  ],
+  "total": 1,
+  "original_sources": [
+    "Dentomaxillofacial Radiology (Oxford Academic)"
+  ],
+  "articles": [
+    {
+      "id": "DMFR_CysticReview_2024",
+      "source": "Dentomaxillofacial Radiology (Oxford Academic)",
+      "pmid": "PMC11211683",
+      "title": "Deep learning in the diagnosis for cystic lesions of the jaws: a review of recent progress",
+      "authors": "Not fully disclosed",
+      "journal": "Dentomaxillofacial Radiology",
+      "year": "2024",
+      "doi": "10.1259/dmfr.20230361",
+      "url": "https://academic.oup.com/dmfr/article/53/5/271/7685407",
+      "keywords": "ameloblastoma; OKC; cystic lesions jaw; deep learning; CBCT; panoramic radiography; review",
+      "study_type": "Review Article",
+      "abstract": "This review summarizes deep learning methods for diagnosing cystic lesions of the jaws, including ameloblastomas, OKCs, dentigerous cysts, and radicular cysts. Methods include image segmentation, feature extraction, and various CNN architectures. High accuracy on CBCT images has been demonstrated. The review covers image processing techniques, challenges such as low-quality images, and future perspectives including explainable AI. Studies from Korea, Japan, China, and Europe were analyzed."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "source": "MDPI",
+  "generated_at": "2026-03-14T20:19:44.676122",
+  "keywords": [
+    "Ameloblastoma",
+    "Odontogenic Cysts",
+    "Artificial intelligence",
+    "Tomography",
+    "X-Ray computed"
+  ],
+  "total": 2,
+  "original_sources": [
+    "MDPI Diagnostics"
+  ],
+  "articles": [
+    {
+      "id": "MDPI_Diagnostics_2026",
+      "source": "MDPI Diagnostics",
+      "pmid": "N/A",
+      "title": "Segmentation-Guided Preprocessing Improves Deep Learning Diagnostic Accuracy and Confidence of Ameloblastoma and Odontogenic Keratocyst in Cone Beam CT Images — A Preliminary Study",
+      "authors": "Not fully disclosed (Peking University Hospital of Stomatology)",
+      "journal": "Diagnostics (MDPI)",
+      "year": "2026",
+      "doi": "10.3390/diagnostics16030416",
+      "url": "https://www.mdpi.com/2075-4418/16/3/416",
+      "keywords": "medical image preprocessing; segmentation; explainable AI; cone-beam CT; ameloblastoma; odontogenic keratocyst",
+      "study_type": "Original Research",
+      "abstract": "Objectives: The differential diagnosis of ameloblastoma and OKC is essential for surgical planning. DL-based methods show promise but face clinical translation challenges due to insufficient interpretability. Methods: An InceptionV3 model was evaluated on 128 pathologically confirmed CBCT scans (AME:64; OKC:64) by 5-fold cross-validation comparing four input types: original slice, bounding-box ROI, precise segmentation ROI, and moderately expanded ROI. Grad-CAM and confidence curve analysis were used for XAI. Results: Precise segmentation ROI significantly improved diagnostic accuracy and confidence at the patient level. Conclusion: Segmentation-guided preprocessing supports clinical implementation of CAD systems for ameloblastoma/OKC diagnosis."
+    },
+    {
+      "id": "MDPI_Diagnostics_OKC_SBC_2024",
+      "source": "MDPI Diagnostics",
+      "pmid": "N/A",
+      "title": "Differential Diagnosis of OKC and SBC on Panoramic Radiographs: Leveraging Deep Learning Algorithms",
+      "authors": "Park JH; Kwak EJ; et al. (Pusan National University Dental Hospital)",
+      "journal": "Diagnostics (MDPI)",
+      "year": "2024",
+      "doi": "10.3390/diagnostics14111144",
+      "url": "https://www.mdpi.com/2075-4418/14/11/1144",
+      "keywords": "deep learning; differentiation; diagnosis; odontogenic keratocyst; simple bone cyst; panoramic radiograph",
+      "study_type": "Original Research",
+      "abstract": "Objective: To determine if deep learning can distinguish OKC from simple bone cyst (SBC) on preoperative panoramic radiographs. Methods: Retrospective analysis of 63 OKC and 125 SBC cases (2018–2022) from Pusan National University Dental Hospital. Results: CNN-based model achieved significant discrimination between OKC and SBC despite their similar radiographic appearances, both presenting as radiolucent lesions. Conclusion: Deep learning offers a promising diagnostic tool for difficult panoramic differential diagnoses involving radiolucent jaw lesions."
+    }
+  ]
+}

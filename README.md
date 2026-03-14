@@ -31,6 +31,7 @@ Para publicar no [Streamlit Cloud](https://streamlit.io/cloud), siga estes requi
 5. Clique em "Deploy".
 
 ## Funcionalidades
+- **Seletor de Arquivos:** Escolha entre diferentes arquivos JSON no diretório (ex: PubMed, Scielo, etc).
 - Resumo estatístico (Total de artigos, Data da busca).
 - Listagem de palavras-chave utilizadas.
 - Filtro por busca textual (Título, Autor, Periódico).
