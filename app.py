@@ -102,6 +102,11 @@ def main():
         return
 
     df = pd.DataFrame(articles)
+    
+    # Ensure necessary columns exist in the DataFrame to avoid errors
+    for col in ['title', 'authors', 'journal', 'year', 'pmid', 'abstract', 'url', 'doi']:
+        if col not in df.columns:
+            df[col] = "N/A"
 
     # Search and Filter logic
     search_query = st.text_input("Filtrar por título, autor ou periódico:", "")
@@ -109,22 +114,22 @@ def main():
     filtered_df = df.copy()
     if search_query:
         mask = (
-            df['title'].str.contains(search_query, case=False, na=False) |
-            df['authors'].str.contains(search_query, case=False, na=False) |
-            df['journal'].str.contains(search_query, case=False, na=False)
+            df['title'].astype(str).str.contains(search_query, case=False, na=False) |
+            df['authors'].astype(str).str.contains(search_query, case=False, na=False) |
+            df['journal'].astype(str).str.contains(search_query, case=False, na=False)
         )
         filtered_df = df[mask]
 
     # Filters by Year and Journal in Sidebar
-    years = sorted(df['year'].unique(), reverse=True)
+    years = sorted(df['year'].astype(str).unique(), reverse=True)
     selected_year = st.sidebar.multiselect("Filtrar por Ano:", years, default=years)
     
-    journals = sorted(df['journal'].unique())
+    journals = sorted(df['journal'].astype(str).unique())
     selected_journals = st.sidebar.multiselect("Filtrar por Periódico:", journals, default=journals)
 
     filtered_df = filtered_df[
-        (filtered_df['year'].isin(selected_year)) &
-        (filtered_df['journal'].isin(selected_journals))
+        (filtered_df['year'].astype(str).isin(selected_year)) &
+        (filtered_df['journal'].astype(str).isin(selected_journals))
     ]
 
     st.write(f"Exibindo **{len(filtered_df)}** de **{len(df)}** artigos.")
@@ -137,18 +142,22 @@ def main():
             col1, col2, col3 = st.columns([1, 1, 1])
             col1.markdown(f"🗓️ **Ano:** {row['year']}")
             col2.markdown(f"📖 **Journal:** {row['journal']}")
-            col3.markdown(f"🆔 **PMID:** {row['pmid']}")
+            
+            pmid_val = row.get('pmid', 'N/A')
+            col3.markdown(f"🆔 **ID/PMID:** {pmid_val}")
 
             with st.expander("Ver Resumo e Detalhes"):
                 st.markdown("**Autores:**")
-                st.write(row['authors'])
+                st.write(row.get('authors', 'Não informado'))
                 st.markdown("**Abstract:**")
-                st.write(row['abstract'])
+                st.write(row.get('abstract', 'Resumo não disponível'))
                 
-                if row.get('doi'):
-                    st.markdown(f"🔗 **DOI:** [{row['doi']}](https://doi.org/{row['doi']})")
+                doi = row.get('doi')
+                if doi and doi != "N/A":
+                    st.markdown(f"🔗 **DOI:** [{doi}](https://doi.org/{doi})")
                 
-                st.markdown(f"🌐 [Ver no PubMed]({row['url']})")
+                url = row.get('url', '#')
+                st.markdown(f"🌐 [Acessar Artigo]({url})")
             
             st.markdown("---")
 

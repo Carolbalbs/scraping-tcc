@@ -1,0 +1,44 @@
+{
+  "source": "IEEE",
+  "generated_at": "2026-04-28T10:38:06.681161",
+  "keywords": [
+    "NLP",
+    "graph theory",
+    "Artificial intelligence"
+  ],
+  "total": 2,
+  "original_sources": [
+    "IEEE / ACL Anthology",
+    "IEEE / ACM"
+  ],
+  "articles": [
+    {
+      "id": "IEEE_GrapherNLP_2024",
+      "source": "IEEE / ACL Anthology",
+      "arxiv_id": "2404.12491",
+      "title": "GraphER: A Structure-aware Text-to-Graph Model for Entity and Relation Extraction",
+      "authors": "Zaratiana U; Tomeh N; Holat P; Charnois T",
+      "journal": "NAACL 2024 (arXiv preprint)",
+      "year": "2024",
+      "doi": "10.48550/arXiv.2404.12491",
+      "url": "https://arxiv.org/abs/2404.12491",
+      "keywords": "entity extraction; relation extraction; graph structure; NLP; information extraction; NAACL",
+      "study_type": "Original Research",
+      "abstract": "Information extraction (IE) is fundamental in NLP, with applications in knowledge graph construction. Prior models use separate or pipeline-based entity and relation prediction, limiting interaction. GraphER introduces a structure-aware text-to-graph model that enables unified prediction of entities and relations through tied, structure-informed decisions. By representing text as a graph and using graph-aware attention, the model captures structural dependencies overlooked by sequential models. Evaluated on joint entity and relation extraction benchmarks, GraphER achieves competitive state-of-the-art results with improved coherence between entity and relation predictions."
+    },
+    {
+      "id": "IEEE_CommunityNLP_2024",
+      "source": "IEEE / ACM",
+      "arxiv_id": "1909.11706",
+      "title": "The Power of Communities: A Text Classification Model with Automated Labeling Using Network Community Detection",
+      "authors": "Kim M; Sayama H",
+      "journal": "arXiv (cs.CL) — Binghamton University",
+      "year": "2019",
+      "doi": "10.48550/arXiv.1909.11706",
+      "url": "https://arxiv.org/abs/1909.11706",
+      "keywords": "community detection; text classification; Louvain method; TFIDF; graph theory; NLP; automated labeling",
+      "study_type": "Original Research",
+      "abstract": "Text classification performance depends heavily on the quality of human-labeled data. This study proposes a network community detection approach to automatically label and classify text into multiclass value spaces. Sentence networks are built where nodes are sentences and edge weights are pairwise cosine TFIDF similarities. The Louvain method detects communities serving as automated labels. SVM and Random Forest models are trained on both human-labeled and community-detected labels. Results showed models with community-detected labels outperformed human-labeled models by 2.68–3.75% accuracy, with potential applications in conversational intelligence systems."
+    }
+  ]
+}

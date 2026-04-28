@@ -1,0 +1,29 @@
+{
+  "source": "Semantic_Scholar",
+  "generated_at": "2026-04-28T10:38:06.686690",
+  "keywords": [
+    "NLP",
+    "graph theory",
+    "Artificial intelligence"
+  ],
+  "total": 1,
+  "original_sources": [
+    "Semantic Scholar"
+  ],
+  "articles": [
+    {
+      "id": "SemanticScholar_GNNRealWorld_2024",
+      "source": "Semantic Scholar",
+      "arxiv_id": "2408.14520",
+      "title": "Towards Graph Prompt Learning: A Survey and Beyond",
+      "authors": "Long Q; Yan Y; Zhang P; Fang C; Cui W; Ning Z; et al.",
+      "journal": "arXiv (cs.LG) — Semantic Scholar",
+      "year": "2024",
+      "doi": "10.48550/arXiv.2408.14520",
+      "url": "https://arxiv.org/abs/2408.14520",
+      "keywords": "graph prompt learning; pre-train; GNN; NLP; CV; question answering; image recognition; survey",
+      "study_type": "Survey",
+      "abstract": "Large-scale pre-train and prompt learning paradigms have demonstrated remarkable adaptability across diverse domains such as question answering, image recognition, and multimodal retrieval. This approach reduces downstream data requirements and computational costs. Despite success of prompt learning in NLP and CV, application in graph domains remains nascent. This survey summarizes methods for alleviating distribution disparities between graph pre-training and fine-tuning, covering prompt design methodologies, related techniques, application scenarios, datasets, and unresolved challenges. Over 100 relevant works are categorized, including text-attributed graphs, molecules, proteins, and recommendation systems."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "source": "Google_Scholar",
+  "generated_at": "2026-04-28T10:38:06.679853",
+  "keywords": [
+    "NLP",
+    "graph theory",
+    "Artificial intelligence"
+  ],
+  "total": 2,
+  "original_sources": [
+    "Google Scholar"
+  ],
+  "articles": [
+    {
+      "id": "GoogleScholar_TextNetworkCommunity_2021",
+      "source": "Google Scholar",
+      "arxiv_id": "2111.15633",
+      "title": "Scalable Community Extraction of Text Networks for Automated Grouping in Medical Databases",
+      "authors": "Sengupta S; et al. (NC State University)",
+      "journal": "arXiv (cs.LG / stat.ML)",
+      "year": "2021",
+      "doi": "10.48550/arXiv.2111.15633",
+      "url": "https://arxiv.org/abs/2111.15633",
+      "keywords": "text networks; community detection; medical databases; spectral methods; NLP; modularity; graph theory",
+      "study_type": "Original Research",
+      "abstract": "Text networks represent large document databases where vertices are documents and edges represent pairwise similarity. Statistical network analysis techniques, particularly community detection, can group such databases into homogeneous clusters. This paper studies scalable community detection for text networks in medical databases. Methods include spectral approaches (Rohe, Jin, Sengupta-Chen) and modularity-based methods (Newman-Girvan). Theoretical guarantees for accuracy are discussed. The approach is applied to group biomedical literature, enabling automated discovery of thematic clusters without human annotation."
+    },
+    {
+      "id": "GoogleScholar_GraphNarratorXAI_2024",
+      "source": "Google Scholar",
+      "arxiv_id": "2410.15268",
+      "title": "GraphNarrator: Generating Textual Explanations for Graph Neural Networks",
+      "authors": "Not fully disclosed",
+      "journal": "arXiv (cs.LG / cs.CL)",
+      "year": "2024",
+      "doi": "10.48550/arXiv.2410.15268",
+      "url": "https://arxiv.org/abs/2410.15268",
+      "keywords": "GNN; explainability; natural language explanation; self-explanation; LLM; Chain-of-Thought; NLP",
+      "study_type": "Original Research",
+      "abstract": "Traditional NLP explanation methods such as feature importance and saliency maps provide limited human-interpretable insights. This paper introduces GraphNarrator, a framework that generates natural language textual explanations for GNN predictions. The model combines self-explanation mechanisms with Chain-of-Thought (CoT) prompting and zero-shot LLM reasoning to produce coherent, step-by-step explanations for graph classification decisions. Evaluated on multiple graph datasets, GraphNarrator outperforms explanation baselines in faithfulness and human preference scores, bridging the gap between GNN decisions and human understanding."
+    }
+  ]
+}

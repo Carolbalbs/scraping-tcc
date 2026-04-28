@@ -1,46 +1,29 @@
 {
   "source": "Nature",
-  "generated_at": "2026-03-14T20:19:44.677705",
+  "generated_at": "2026-04-28T10:38:06.684179",
   "keywords": [
-    "Ameloblastoma",
-    "Odontogenic Cysts",
-    "Artificial intelligence",
-    "Tomography",
-    "X-Ray computed"
+    "NLP",
+    "graph theory",
+    "Artificial intelligence"
   ],
-  "total": 2,
+  "total": 1,
   "original_sources": [
-    "Nature / Int J Oral Science",
     "Nature Scientific Reports"
   ],
   "articles": [
     {
-      "id": "NatureIJOS_OKC_AI_2024",
-      "source": "Nature / Int J Oral Science",
-      "pmid": "N/A",
-      "title": "Digital pathology-based artificial intelligence models for differential diagnosis and prognosis of sporadic odontogenic keratocysts",
-      "authors": "Cai X; Zhang H; Wang Y; et al.",
-      "journal": "International Journal of Oral Science",
-      "year": "2024",
-      "doi": "10.1038/s41368-024-00287-y",
-      "url": "https://www.nature.com/articles/s41368-024-00287-y",
-      "keywords": "odontogenic keratocyst; digital pathology; artificial intelligence; Inception_v3; prognosis",
-      "study_type": "Original Research",
-      "abstract": "519 OKC cases comprising 2,157 H&E-stained images were used to develop digital pathology-based AI models for OKC diagnosis and prognosis. Inception_v3 was trained on patch-level images. Whole slide image-level AI models were developed by integrating deep learning pathology features with machine learning algorithms. Models distinguished OKC from orthokeratinized odontogenic cyst and other jaw cysts and predicted recurrence risk. The AI model shows strong potential for clinical application in odontogenic jaw diseases."
-    },
-    {
-      "id": "NatureSciRep_CLASEG_2025",
+      "id": "NatureSciRep_XAI_Graph_2022",
       "source": "Nature Scientific Reports",
-      "pmid": "N/A",
-      "title": "CLASEG: advanced multiclassification and segmentation for differential diagnosis of oral lesions using deep learning",
+      "arxiv_id": "N/A",
+      "title": "Explainable Artificial Intelligence through Graph Theory by Generalized Social Network Analysis-Based Classifier",
       "authors": "Not fully disclosed (Scientific Reports authors)",
       "journal": "Scientific Reports (Nature)",
-      "year": "2025",
-      "doi": "10.1038/s41598-025-03268-1",
-      "url": "https://www.nature.com/articles/s41598-025-03268-1",
-      "keywords": "oral lesions; deep learning; EfficientNet-B3; Mask R-CNN; classification; segmentation; oral cancer",
+      "year": "2022",
+      "doi": "10.1038/s41598-022-19419-7",
+      "url": "https://www.nature.com/articles/s41598-022-19419-7",
+      "keywords": "explainable AI; graph theory; social network analysis; classifier; NLP; tabular data",
       "study_type": "Original Research",
-      "abstract": "A novel deep learning framework for multi-class classification-based segmentation enabling accurate differential diagnosis of 14 common oral lesions across various mouth locations using photographic images. A dataset of 2,072 clinical images was used. The framework integrates EfficientNet-B3 for classification and ResNet-101-based Mask R-CNN for segmentation, achieving classification accuracy of 74.49% and segmentation AP50 of 72.18. Grad-CAM was applied for visualization of influential areas for predictive decisions."
+      "abstract": "This paper proposes GSNAc, a supervised visual machine learning classifier based on graph theory and social network analysis (SNA). The model transforms tabular data into a network where samples are nodes and edges reflect pairwise similarities. The raw network graph is enriched and simplified to extract a visualizable Graph Classifier Model (GCM). Extended from the prior SNAc model for time-series data, GSNAc works with any tabular data including numerical and categorical features. NLP researchers can convert sentences into adjacency matrices based on word co-occurrence and apply graph similarity techniques for word similarity prediction. The model achieves competitive accuracy while providing inherent explainability through graph visualization."
     }
   ]
 }

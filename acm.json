@@ -1,0 +1,29 @@
+{
+  "source": "ACM",
+  "generated_at": "2026-04-28T10:38:06.678104",
+  "keywords": [
+    "NLP",
+    "graph theory",
+    "Artificial intelligence"
+  ],
+  "total": 1,
+  "original_sources": [
+    "ACM Digital Library"
+  ],
+  "articles": [
+    {
+      "id": "ACM_PathsOverGraph_2025",
+      "source": "ACM Digital Library",
+      "arxiv_id": "2410.14211",
+      "title": "Paths-over-Graph: Knowledge Graph Empowered Large Language Model Reasoning",
+      "authors": "Tan X; Wang X; Liu Q; Xu X; Yuan X; Zhang W",
+      "journal": "Proceedings of The Web Conference 2025 (WWW '25)",
+      "year": "2025",
+      "doi": "10.1145/3696410.3714892",
+      "url": "https://arxiv.org/abs/2410.14211",
+      "keywords": "LLM; knowledge graph; question answering; retrieval-augmented generation; graph reasoning; WWW 2025",
+      "study_type": "Original Research",
+      "abstract": "LLMs face challenges in answering complex questions requiring multi-hop reasoning due to knowledge incompleteness and hallucination. Paths-over-Graph (PoG) is a KG-empowered LLM reasoning framework that retrieves structured relation paths from KGs to guide multi-hop question answering. PoG introduces a novel path-searching algorithm that explores the KG efficiently by pruning irrelevant branches. Experiments on KGQA benchmarks (WebQSP, CWQ, MQA-3hop) show PoG achieves state-of-the-art results while producing interpretable reasoning chains as KG paths. Published at WWW '25, Sydney."
+    }
+  ]
+}
