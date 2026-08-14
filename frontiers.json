@@ -1,0 +1,46 @@
+{
+  "source": "Frontiers",
+  "generated_at": "2026-08-14T14:02:09.079307",
+  "keywords": [
+    "Ameloblastoma",
+    "Odontogenic Cysts",
+    "Artificial intelligence",
+    "Tomography",
+    "X-Ray computed"
+  ],
+  "total": 2,
+  "original_sources": [
+    "Frontiers in Oncology"
+  ],
+  "articles": [
+    {
+      "id": "Frontiers_OCL-Net_2024",
+      "source": "Frontiers in Oncology",
+      "pmid": "N/A",
+      "title": "Odontogenic cystic lesion segmentation on cone-beam CT using an auto-adapting multi-scaled UNet",
+      "authors": "Huang Z; Li B; Cheng Y; Kim J",
+      "journal": "Frontiers in Oncology",
+      "year": "2024",
+      "doi": "10.3389/fonc.2024.1379624",
+      "url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1379624/full",
+      "keywords": "CBCT; UNet; segmentation; odontogenic cyst; ameloblastoma; deep learning",
+      "study_type": "Original Research",
+      "abstract": "Odontogenic Cystic Lesions (OCLs) are common jaw pathologies including radicular cysts, dentigerous cysts, OKC, and ameloblastoma. OCL-Net, combining a multi-scale module with auto-adapting ROI, was proposed for automatic segmentation of OCLs in CBCT. Compared to standard UNet with multi-scale modules, OCL-Net achieved superior results. Segmented 3D masks can improve dental diagnostic efficiency for OCLs. The model demonstrated robust performance across subtypes including the most aggressive lesions."
+    },
+    {
+      "id": "Frontiers_Chai_AME_OKC_CBCT_2022",
+      "source": "Frontiers in Oncology",
+      "pmid": "35155194",
+      "title": "Melhora na Acurácia Diagnóstica de Ameloblastoma e Queratocisto Odontogênico em CBCT por Inteligência Artificial",
+      "title_en": "Improved Diagnostic Accuracy of Ameloblastoma and Odontogenic Keratocyst on Cone-Beam CT by Artificial Intelligence",
+      "authors": "Chai ZK; Mao L; Chen H; et al.",
+      "journal": "Frontiers in Oncology",
+      "year": "2022",
+      "doi": "10.3389/fonc.2021.793417",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35155194/",
+      "keywords": "CNN; ameloblastoma; queratocisto odontogênico; CBCT; deep learning; diagnóstico; cirurgia bucomaxilofacial",
+      "study_type": "Original Research",
+      "abstract": "O estudo utilizou uma rede neural convolucional (CNN) para diferenciar ameloblastoma (AME) de queratocisto odontogênico (OKC) em imagens de CBCT. O modelo foi treinado com 178 imagens de AME e 172 de OKC provenientes do Hospital de Estomatologia da Universidade de Wuhan. O dataset foi dividido em treino (272 casos) e teste (78 casos). O modelo Inception v3 foi adotado e seu desempenho foi comparado com o de cirurgiões bucomaxilofaciais. Sensibilidade: 87,2%; especificidade: 82,1%; acurácia geral: 84,6%; F1-score: 85,0%. O modelo superou cirurgiões juniores (58,0%) e apresentou desempenho comparável ao de cirurgiões seniores (65,7%), demonstrando grande potencial clínico para o diagnóstico pré-operatório assistido por IA."
+    }
+  ]
+}
